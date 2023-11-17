@@ -21,7 +21,7 @@
     "**/logs": true
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "Vue.volar"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -60,5 +60,5 @@
     "，": true,
     "（": true,
     "）": true
-  },
+  }
 }

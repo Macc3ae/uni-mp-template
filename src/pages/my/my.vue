@@ -34,12 +34,8 @@ console.log('memberStore :>> ', memberStore.profile?.avatar)
       <!-- 情况2：未登录 -->
       <view class="flex h-120 px-36 text-white" v-else>
         <navigator url="/pages/login/login" hover-class="none">
-          <image
-            class="w-120 h-120 rounded-1"
-            style="filter: grayscale(100%)"
-            mode="aspectFill"
-            src="../../static/images/default-a.png"
-          ></image>
+          <image class="w-120 h-120 rounded-1" style="filter: grayscale(100%)" mode="aspectFill"
+            src="../../static/images/default-a.png"></image>
         </navigator>
         <view class="flex flex-col justify-center leading-30 py-16 ml-20">
           <navigator url="/pages/login/login" hover-class="none" class="max-w-350 mb-16 text-30rpx truncate">
@@ -50,45 +46,28 @@ console.log('memberStore :>> ', memberStore.profile?.avatar)
           </view>
         </view>
       </view>
-      <navigator
-        class="absolute bottom-0 right-40 text-white text-md"
-        url="/pagesMember/settings/settings"
-        hover-class="none"
-      >
+      <navigator class="absolute bottom-0 right-40 text-white text-md" url="/pagesMember/settings/settings"
+        hover-class="none">
         设置
       </navigator>
     </view>
     <!-- 我的订单 -->
-    <view
-      class="relative z-50 p-30 mt-50 mx-20 bg-white rounded-md"
-      style="box-shadow: 0 4rpx 6rpx rgba(240, 240, 240, 0.6)"
-    >
+    <view class="relative z-50 p-30 mt-50 mx-20 bg-white rounded-md"
+      style="box-shadow: 0 4rpx 6rpx rgba(240, 240, 240, 0.6)">
       <view class="h-40 text-[#1e1e1e] text-base">
         我的订单
-        <navigator
-          class="float-right text-sm text-[#939393]"
-          url="/pagesOrder/list/list?type=0"
-          hover-class="none"
-        >
+        <navigator class="float-right text-sm text-[#939393]" url="/pagesOrder/list/list?type=0" hover-class="none">
           查看全部订单<text class="icon-right"></text>
         </navigator>
       </view>
       <view class="w-full flex justify-between pt-40 px-20 pb-10">
         <!-- 订单 -->
-        <navigator
-          v-for="item in orderTypes"
-          :key="item.type"
-          :class="item.icon"
-          :url="`/pagesOrder/list/list?type=${item.type}`"
-          class="navigator"
-          hover-class="none"
-        >
+        <navigator v-for="item in orderTypes" :key="item.type" :class="item.icon"
+          :url="`/pagesOrder/list/list?type=${item.type}`" class="navigator" hover-class="none">
           {{ item.text }}
         </navigator>
         <!-- 客服 -->
-        <button class="icon-handset navigator p-0 m-0 bg-transparent leading-[inherit]" open-type="contact"
-          >售后</button
-        >
+        <button class="icon-handset navigator p-0 m-0 bg-transparent leading-[inherit]" open-type="contact">售后</button>
       </view>
     </view>
     <!-- 猜你喜欢 -->
@@ -119,10 +98,12 @@ page {
   margin-right: 10rpx;
   border-radius: 30rpx;
 }
+
 .navigator {
   text-align: center;
   font-size: 24rpx;
   color: #333;
+
   &::before {
     display: block;
     font-size: 60rpx;
