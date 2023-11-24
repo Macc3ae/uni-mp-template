@@ -48,6 +48,18 @@
       "style": {
         "navigationBarTitleText": "热门推荐"
       }
+    },
+    {
+      "path": "pages/goods/goods",
+      "style": {
+        "navigationBarTitleText": "goods"
+      }
+    },
+    {
+      "path": "pages/goods/components/AddressPanal",
+      "style": {
+        "navigationBarTitleText": "AddressPanal"
+      }
     }
   ],
   "globalStyle": {
@@ -107,6 +119,18 @@
             "navigationStyle": "custom",
             "navigationBarTextStyle": "white",
             "navigationBarTitleText": "个人信息"
+          }
+        },
+        {
+          "path": "address/address",
+          "style": {
+            "navigationBarTitleText": "地址管理"
+          }
+        },
+        {
+          "path": "address/addressForm",
+          "style": {
+            "navigationBarTitleText": "编辑地址"
           }
         }
       ]
